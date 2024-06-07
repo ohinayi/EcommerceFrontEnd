@@ -7,7 +7,7 @@ const useApi = () => {
     const {logout} = useContext(authcontext);
     const [api] = useState(() => {
         const instance = axios.create({
-            baseURL: 'http://localhost:3003',
+            baseURL: 'https://newecommerce-2.onrender.com',
             headers: {
                 "content-type": "application/json",
             }

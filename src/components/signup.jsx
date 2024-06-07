@@ -24,7 +24,7 @@ const Signup = () => {
 
         try {
             const response = await api.post(
-                "http://localhost:3003/userCreate",
+                "userCreate",
                 {
                     name,
                     email,
