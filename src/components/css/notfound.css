@@ -1,0 +1,6 @@
+.error-container{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: red;
+}

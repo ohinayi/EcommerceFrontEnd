@@ -1,0 +1,146 @@
+.Iitem-body{
+    background: white;
+    height: 90vh;
+}
+.Iwelcome-container{
+    background-size: cover;
+    background-position: center;
+    height: 60.5vh;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid var(--nav-background);
+    border-radius: 10px;
+    margin: 10px;
+}
+.Iflex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    gap: 30px;
+   
+}
+.Iwelcome{
+    width: 100%;
+}
+.Iitem-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
+.Icards-holder{
+    flex: 0 0 25%; /* Four cards per row */
+    max-width: 25%; /* Ensure maximum width for each card */
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Icards{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align content */
+}
+.Icard-image{
+    max-width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.Ispan{
+    font-weight: bold;
+    font-size: 18px;
+}
+.Iloading{
+    font-size: 50px;
+    font-weight: bolder;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.Icard-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Iview{
+    width: 150px;
+    height: 30px;
+    background: var(--nav-background);
+    border-radius: 5px;
+    color: white;
+    transition: all 1s ease;
+}
+.Iview:hover{
+    transform: scale(1.1);
+}
+.Icard-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.Icard-size{
+    font-size: 16px;
+    font-weight:bold ;
+    margin-top: 10px;
+}
+.Iitem-cost{
+    font-size: 16px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .Iwelcome-container{
+        height: auto; /* Change to auto to fit content */
+    }
+    .Iflex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;
+        gap: 5px;
+       
+    }
+    .Icards-holder{
+        flex: 0 0 100%; /* Full width for each card */
+        max-width: 100%; /* Adjust max-width for responsiveness */
+        padding: 0; /* Remove padding */
+    }
+    .Icards {
+        margin-bottom: 20px; 
+        padding: 10px;/* Increase margin for better separation */
+    }
+    .Icard-details {
+        align-items: center; /* Center align details */
+        text-align: center; /* Center align text */
+    }
+    .Icard-image {
+        height: 90px; /* Allow image height to adjust based on content */
+        max-width: 100%; /* Ensure image doesn't overflow */
+    }
+    .Iview {
+        width: 100%; /* Make button full width */
+        max-width: 200px; /* Limit button width */
+        margin: 0 auto; /* Center align button */
+    }
+    .Icards-holder {
+        flex: 0 0 50% !important; /* Two cards per row */
+        max-width: 50% !important; /* Ensure maximum width for each card */
+        padding: 5px;
+    }
+    .Iitem-card-container{
+        padding: 5px;
+    }
+    .Icard-name{
+        font-size: 17px;
+    }
+    .Icard-size{
+        font-size: 13px;
+    }
+    .Iitem-cost{
+        font-size: 13px;
+    }
+    .Ispan{
+        font-size: 16px;
+    }
+}

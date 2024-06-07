@@ -1,0 +1,117 @@
+.signup-container{
+    width: 40%;
+    margin-top: 15%;
+    margin-left: 30%;
+    height:fit-content;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+.signup-sign{
+    font-size: 30px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+.signup-label{
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;;
+}
+.signup-input{
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid var(--label-color);
+    font-family: serif;
+    font-size: 15px;
+    background: none;
+    color: white;
+}
+.signup-input:focus{
+    background: white;
+    color: black;
+}
+.signup-button{
+    margin-top: 15px;
+    height: 40px;
+    font-family: sans-serif;
+    background: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    transition: all 1s ease;
+}
+.signup-button:hover{
+    transform: scale(0.95);
+    background: var(--hover-color);
+    color: black;
+}
+.signup-link{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px; 
+    margin-left: 28%;
+    color: var(--label-color);
+    margin-top: 10px;
+ }
+ .signup-link:hover{
+     text-decoration: underline;
+     color: var(--label-color);
+ }
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    margin-left: 27%;
+    margin-top: 10px;
+}
+.signup-socialmedia{
+    text-decoration: none;
+    padding: 0px 10px;
+}
+@media (max-width: 768px) {
+    .bodys{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .signup-container{
+        width: 90%;
+        margin-left: 0;
+        margin-top: 1%;
+        padding: 10px;
+    }
+    .socialmedia{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 13px;
+        text-align: center;
+        margin-left: 10%;
+        justify-content: flex-start;
+    }
+    .signup-link{
+        margin-left: 0;
+        font-size: 13px;
+        text-align: center;
+    }
+    .signup-socialmedia{
+        padding: 0 5px 0px 0;
+    }
+    .signup-label{
+        font-size: 12px;
+    }
+    .signup-input{
+        height: 30px;
+    }
+    .signup-sign{
+        font-size: 20px;
+    }
+    .signup-button{
+        height: 30px;
+        font-size: 15px;
+    }
+}

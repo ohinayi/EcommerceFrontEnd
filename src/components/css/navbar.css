@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+:root {
+    --shadow-color: rgb(2, 0, 14);
+    --span-color: rgb(186, 189, 189);
+    --hover-color: rgb(250, 250, 250);
+    --botton-background-color: rgb(73, 71, 71);
+    --button-background: rgba(72, 87, 117, 0.322);
+    --nav-background: rgb(15 23 42 / 1);
+    --label-color: rgb(151, 151, 151);
+}
+
+body, html {
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid var(--shadow-color);
+    height: 60px;
+    padding: 0px 10px;
+    background: var(--nav-background);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 12;
+}
+
+.bar {
+    display: none;
+}
+
+.logo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.solid {
+    color: rgb(186, 189, 189);
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.scaff {
+    display: none;
+}
+
+.logo {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-left: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    padding: 0px 10px;
+    font-size: 19px;
+    transition: all 0.7s ease-out;
+    display: inline-block;
+    transition: all 1s ease;
+    color: white;
+}
+
+.link:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+.nav-dropDown {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 19px;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .scaff {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        z-index: 11; /* Ensure it is behind the nav but above other content */
+        background: rgba(0, 28, 80, 0.8) ;
+        top: 0;
+        left: 0;
+    }
+
+    .nav-dropDown {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        gap: 10px;
+        align-items:flex-end;
+        padding: 10px;
+        width: 40%;
+        height: 100vh;
+        background: rgba(0, 14, 39, 0.904);
+        color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 15; /* Ensure it is above the scaff */
+    }
+    .D-link{
+        color: white;
+    }
+    .D-link:hover{
+        text-decoration: underline;
+    }
+}
